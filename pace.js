@@ -302,7 +302,6 @@
 			try {
 				this.getElement().parentNode.removeChild(this.getElement());
 			} catch (_error) {
-				NoTargetError = _error;
 			}
 			return this.el = void 0;
 		};
@@ -961,7 +960,6 @@
 		try {
 			bar.render();
 		} catch (_error) {
-			NoTargetError = _error;
 		}
 		if (!document.querySelector('.pace')) {
 			return setTimeout(Pace.start, 50);
